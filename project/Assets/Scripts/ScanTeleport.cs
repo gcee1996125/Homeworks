@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FUCK : MonoBehaviour
+public class ScanTeleport : MonoBehaviour
 {
 
     public GameObject UIRoot = null;
@@ -19,8 +19,9 @@ public class FUCK : MonoBehaviour
         if (UIRoot != null)
         {
             int childCount = UIRoot.transform.childCount;
-            for (int i = 0; i < childCount; i++)
+            for (int i = 0; i < childCount; i++) 
             {
+                
                 GameObject child = UIRoot.transform.GetChild(i).gameObject;
                 if (child.name.Equals("BtnLeft"))
                 {
@@ -41,6 +42,7 @@ public class FUCK : MonoBehaviour
                         .onClick
                         .AddListener(BtnBackOnClick);
                 }
+               // i++;
             }
         }
 
