@@ -12,7 +12,7 @@ public class Scenesjump : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         bb1.onClick.AddListener(fuck);
-        bb2.onClick.AddListener(fucker);
+        //bb2.onClick.AddListener(fucker);
     }
 
  
